@@ -23,6 +23,7 @@ class Json:
         return self._obj[item]
     def __setitem__(self, key, value):
         self._obj[key] = value
+        self.update()
     def __str__(self):
         return str(self._obj)
     def __repr__(self):
